@@ -1,0 +1,211 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Joe Dane",
+      "email": "joe@example.com",
+      "password": "password",
+      "availableCredit": 835901
+    },
+    {
+      "name": "Barry Allen",
+      "email": "allen@gmail.com",
+      "password": "password",
+      "availableCredit": 753277.36,
+      "id": 2
+    },
+    {
+      "name": "Krishna Kumar",
+      "email": "krishna@example.com",
+      "password": "password",
+      "availableCredit": 842020,
+      "id": 3
+    }
+  ],
+  "myContracts": [
+    {
+      "id": 1,
+      "name": "Contract 1",
+      "type": "Monthly",
+      "perPayment": 12000.25,
+      "termLength": 12,
+      "termFee": 12,
+      "paymentAmount": 126722.64
+    },
+    {
+      "id": 2,
+      "name": "Contract 2",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "termLength": 12,
+      "termFee": 12,
+      "paymentAmount": 21120
+    },
+    {
+      "id": 3,
+      "name": "Contract 3",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "termLength": 12,
+      "termFee": 12,
+      "paymentAmount": 63360
+    },
+    {
+      "id": 4,
+      "name": "Contract 4",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "termLength": 12,
+      "termFee": 12,
+      "paymentAmount": 63360
+    },
+    {
+      "id": 5,
+      "name": "Contract 5",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "termLength": 12,
+      "termFee": 12,
+      "paymentAmount": 63360
+    },
+    {
+      "id": 6,
+      "name": "Contract 6",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "termLength": 12,
+      "termFee": 12,
+      "paymentAmount": 63360
+    }
+  ],
+  "myCashKicks": [
+    {
+      "name": "My first cashkick",
+      "status": "pending",
+      "maturity": "2023-08-08T03:25:47.240Z",
+      "totalReceived": 253445.28,
+      "totalFinanced": 223031.85,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "name": "Second cashkick",
+      "status": "pending",
+      "maturity": "2023-08-08T05:36:57.933Z",
+      "totalReceived": 84480,
+      "totalFinanced": 74342.4,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "name": "My third cashkick",
+      "status": "pending",
+      "maturity": "2023-08-08T08:39:40.604Z",
+      "totalReceived": 147840,
+      "totalFinanced": 130099.2,
+      "userId": 1,
+      "id": 8
+    }
+  ],
+  "selectedContracts": [
+    {
+      "userId": 1,
+      "contractId": 1,
+      "cashKickId": 6,
+      "selectedAmount": 0,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "contractId": 2,
+      "cashKickId": 6,
+      "selectedAmount": 0,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "contractId": 6,
+      "cashKickId": 7,
+      "selectedAmount": 0,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "contractId": 3,
+      "cashKickId": 7,
+      "selectedAmount": 9952,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "contractId": 6,
+      "cashKickId": 8,
+      "selectedAmount": 0,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "contractId": 4,
+      "cashKickId": 8,
+      "selectedAmount": 13400,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "contractId": 3,
+      "cashKickId": 8,
+      "selectedAmount": 0,
+      "id": 11
+    }
+  ],
+  "payments": [
+    {
+      "userId": 2,
+      "dueDate": "Jun 12, 2023",
+      "status": "UpComing",
+      "expectedAmount": 56245.28,
+      "outstanding": 4687.11,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "dueDate": "Jun 13, 2023",
+      "status": "UpComing",
+      "expectedAmount": 42537.6,
+      "outstanding": 3544.8,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "dueDate": "Jun 13, 2023",
+      "status": "UpComing",
+      "expectedAmount": 42537.6,
+      "outstanding": 3544.8,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "dueDate": "Jun 13, 2023",
+      "status": "UpComing",
+      "expectedAmount": 49390.88,
+      "outstanding": 4115.91,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "dueDate": "Jun 13, 2023",
+      "status": "UpComing",
+      "expectedAmount": 85684.0768,
+      "outstanding": 7140.34,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "dueDate": "Jun 13, 2023",
+      "status": "UpComing",
+      "expectedAmount": 141929.3568,
+      "outstanding": 11827.45,
+      "id": 6
+    }
+  ]
+}

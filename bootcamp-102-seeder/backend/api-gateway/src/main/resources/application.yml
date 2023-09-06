@@ -1,0 +1,42 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+      routes:
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/users/**
+        - id: CASHKICK-SERVICE
+          uri: lb://CASHKICK-SERVICE
+          predicates:
+            - Path=/cashKicks/**
+        - id: CONTRACT-SERVICE
+          uri: lb://CONTRACT-SERVICE
+          predicates:
+            - Path=/contracts/**
+        - id: PAYMENTS-SERVICE
+          uri: lb://PAYMENTS-SERVICE
+          predicates:
+            - Path=/payments/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+      hostname: localhost
