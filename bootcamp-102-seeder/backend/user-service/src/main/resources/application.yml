@@ -1,0 +1,30 @@
+server:
+  port: 9001
+
+Jwt:
+  secret: secret
+
+app:
+  jwtToken:
+    message: 'Successfully logged in'
+
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    url: ${db_url}
+    username: ${db_username}
+    password: ${db_password}
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+      hostname: localhost

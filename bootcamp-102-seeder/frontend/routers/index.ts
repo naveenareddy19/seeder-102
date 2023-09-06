@@ -1,0 +1,5 @@
+export const LOGIN="/"
+export const RESET_PASSWORD="/reset-password"
+export const HOMEPAGE = "/homepage"
+export const SIGNUP = "/signup"
+export const AUTHCONNECTION = "google-oauth2"

@@ -1,0 +1,19 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: CONTRACT-SERVICE
+  datasource:
+    url: ${db_url}
+    username: ${db_username}
+    password: ${db_password}
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
